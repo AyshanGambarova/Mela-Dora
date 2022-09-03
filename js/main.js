@@ -9,7 +9,6 @@ $(document).ready(function (e) {
             $(".navbar-top").css('display', 'none');
             $(".navbar-brand img").attr("src", "images/logo-scrolled.svg");
             $(".scroll-top").css({ opacity: 1 });
-            console.log("salam");
             
         }
         else {

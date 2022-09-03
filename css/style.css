@@ -26,6 +26,7 @@ img {
 .scrolled {
   background-color: #1a5221;
   border-bottom: 4px solid #ffbf00;
+  transition: all 0.3s ease;
 }
 .offcanvas-body {
   padding: 80px 130px;

@@ -1,12 +1,19 @@
 body {
-  overflow-x: hidden;
+  max-width: 100%;
+    overflow-x: hidden;
   font-family: 'Merriweather', serif;
 }
 #main-header a,
 img {
   color: white;
 }
-#main-page {
+#about-header{
+  background-color: white;
+}
+#about-header a{
+color: black;
+}
+#main-page-banner {
   height: 550px;
   width: 100%;
   position: relative;
@@ -15,23 +22,41 @@ img {
   linear-gradient(to bottom, rgba(25, 25, 27, 0.582), rgba(34, 33, 34, 0.73)),
   url('../images/home-banner-2.jpg');
 }
-#main-page .cover {
+#about-page-banner {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-image:
+  linear-gradient(to bottom, rgba(25, 25, 27, 0.582), rgba(34, 33, 34, 0.73)),
+  url('../images/home-banner-1.jpg');
+}
+#main-page-banner .cover {
   background-color: rgba(0, 0, 0, 0.4);
 }
-#main-page img {
+#main-page-banner img {
   height: 550px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top center;
 }
+.navbar-top{
+  display: flex;
+}
 .navbar-brand img {
   width: 115px;
 }
+.nav-link:hover{
+  color:#91b401!important;
+  text-decoration: underline;
+  text-decoration-color: #91b401;
+  text-underline-offset: 5px;
+}
 .scrolled {
-  background-color: #1a5221;
-  border-bottom: 4px solid #ffbf00;
-  transition: all 0.3s ease;
+  background-color: #1a5221!important;
+  border-bottom: 4px solid #ffbf00!important;
+  transition: all 0.3s ease!important;
 }
 .offcanvas-body {
   padding: 80px 130px;
@@ -40,6 +65,9 @@ img {
 .search-button {
   padding-top: 7px;
   padding-left: 18px;
+}
+.search-button:hover{
+  color: white;
 }
 .search-input {
   border: 3px solid #1a5221;
@@ -84,8 +112,8 @@ img {
 }
 .category-img {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 30px;
+  bottom: 13px;
 }
 .category-img img {
   width: 200px;
@@ -119,7 +147,8 @@ img {
   background-color: #f3f3f3;
 }
 .about-inner-text p {
-  font-size: 13px;
+  font-size: 11px;
+  line-height: 26px;
 }
 .about-bottom-text {
   font-weight: 300;
@@ -236,15 +265,31 @@ select:focus {
   padding: 10px;
   box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
-#main-footer {
-  padding-top: 300px;
+#main-footer ul li a{
+  color: white;
+}
+#about-footer ul li a{
+  color: black;
+}
+#main-footer{
   background: url(../images/footer-bg.png);
+  background-color: white;
+}
+#about-footer{
+  background: url(../images/footer-curve.svg);
+  background-color: #f3f3f3;
+}
+#main-footer, #about-footer {
+  padding-top: 300px;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: top center;
 }
 .footer-link {
   color: #ffbf00;
+}
+.f-link:hover{
+  color: #ffbf00!important;
+
 }
 .scroll-top {
   width: 40px;
@@ -266,5 +311,69 @@ select:focus {
   margin-bottom: 10px;
 }
 .list-unstyled li a {
+  font-weight: 100;
+    font-size: 13px;
+}
+.about-left,.about-right{
+  padding: 30px;
+}
+.service-card{
+  padding: 0px 35px;
+}
+.services-card-text{
+  font-size: 13px;
   font-weight: 300;
 }
+.services-card-text ul{
+  list-style-type: none;
+}
+.services-card-text p{
+  margin-left: 25px;
+}
+.services-button{
+  border: 1px solid black;
+  padding: 11px 30px;
+  font-size: 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+}
+.services-button:hover{
+  background-color:#91b401;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+#about-footer .logo{
+  width: 270px;
+}
+.banner-pattern{
+  width: 100%;
+  position: relative;
+}
+.pattern-img{
+  position: absolute;
+  right: 55px;
+  bottom: -115px;
+}
+#gardens-inner{
+  position: relative;
+}
+.page-heading-pattern{
+  position: absolute;
+  left: -35px;
+  top: 3px;
+  width: 253px;
+}
+.services-wrapper,.responsibility-inner-text{
+  margin-top: 100px;
+}
+.services-inner-img{
+  height: 400px;
+  padding: 0px 35px;
+}
+.responsibility-inner-text p{
+  font-size: 13px;
+    font-weight: 300;
+}
+
